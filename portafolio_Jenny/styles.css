@@ -1,0 +1,102 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center; /* Centrar todo el texto por defecto */
+}
+
+h1, h2, h3 {
+    color: #9b59b6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.bio, .projects-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.5);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Centrar texto en estas secciones también */
+}
+
+.bio:hover, .projects-section:hover {
+    transform: scale(1.02);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center; /* Centrar texto dentro de los proyectos */
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    background: #9b59b6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background: #8e44ad;
+}
+
+.bar {
+    width: 100%;
+    background-color: #555;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bar-fill {
+    display: block;
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #9b59b6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
